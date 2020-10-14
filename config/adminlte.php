@@ -240,27 +240,38 @@ return [
             'text' => 'Usuarios',
             'url'  => 'home',
             'can'  => 'admin',
+
         ],
         [
             'text'    => 'Productos',
             'icon'    => 'fas fa-box-open',
             'url'  => 'producto',
+            'can'  => 'admin',
         ],
         [
             'text' => 'Solicitar articulos',
             'url'  => 'solicitar',
             'icon'    => 'fas fa-shopping-cart',
+            'can'  => 'admin',
         ],
         // ['header' => 'account_settings'],
         [
             'text' => 'Adicionar',
             'url'  => 'adicionar',
             'icon' => 'fas fa-cash-register',
+            'can'  => 'admin',
         ],
         [
-            'text' => 'Sucursales',
+            'text' => 'Usuarios',
             'url'  => 'sucursales',
             'icon' => 'fas fa-fw fa-lock',
+            
+        ],
+        [
+            'text' => 'sucursales',
+            'url'  => 'sucursales',
+            'icon' => 'fas fa-fw fa-lock',
+            
         ],
         
         // ['header' => 'labels'],

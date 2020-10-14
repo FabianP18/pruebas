@@ -10,39 +10,43 @@
 
 @section('content')
 
-    <button type="button" class="btn btn-info btn-lg mb-3" data-toggle="modal" data-target="#myModal">Agregar sucursal</button>
+    <button type="button" class="btn btn-info btn-lg mb-3" data-toggle="modal" data-target="#myModal">Agregar usuario</button>
 
     <table class="table text-center">
         <thead class="thead-dark ">
           <tr class="center">
-            <th scope="col">Empresa</th>
-            <th scope="col">Nombre</th>
-            <th scope="col">Nit</th>
-            <th scope="col">Dirección</th>
-            <th scope="col">Barrio</th>
+            <th scope="col">Cedula</th>
+            <th scope="col">nombre</th>
+            <th scope="col">Correo</th>
             <th scope="col">Telefono</th>
+            <th scope="col">Sucursal</th>
             <th scope="col">Acciones</th>
-            <th scope="col">Detalles</th>
+            
           </tr>
         </thead>
         <tbody>
-            @foreach ($sucursales as $item)
                 <tr>
-                    <th scope="row">1</th>
-                    <td>{{$item->nombre_sucursal}}</td>
-                    <td>{{$item->nit}}</td>
-                    <td>{{$item->direccion}}</td>
-                    <td>{{$item->barrio}}</td>
-                    <td>{{$item->telefono}}</td>
+                    <th scope="row">2000</th>
+                    <td>juan</td>
+                    <td>juan@juan.com</td>
+                    <td>222</td>
+                    <td>cali</td>
                     <td>
                         <button class="btn btn-warning"><i class="fas fa-pen"></i></button>
                         <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
                     </td>
+                </tr>
+                <tr>
+                    <th scope="row">2000</th>
+                    <td>juan</td>
+                    <td>juan@juan.com</td>
+                    <td>222</td>
+                    <td>cali</td>
                     <td>
-                        <button class="btn btn-info"><i class="fas fa-info-circle"></i></button>
+                        <button class="btn btn-warning"><i class="fas fa-pen"></i></button>
+                        <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
                     </td>
                 </tr>
-            @endforeach
         </tbody>
     </table>
 
